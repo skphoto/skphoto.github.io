@@ -1,0 +1,52 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin box-shadow($property) {
+  -webkit-box-shadow: $property;
+     -moz-box-shadow: $property;
+      -ms-box-shadow: $property;
+          box-shadow: $property;
+}
+
+@mixin text-shadow($property) {
+  -webkit-text-shadow: $property;
+     -moz-text-shadow: $property;
+      -ms-text-shadow: $property;
+          text-shadow: $property;
+}
+
+@mixin rotate($deg) {
+  -webkit-transform:rotate($deg);
+     -moz-transform:rotate($deg);
+      -ms-transform:rotate($deg);
+          transform:rotate($deg);
+}
+
+
+$xs: 320px;
+$s: 540px;
+$m: 767px;
+$l: 992px;
+$xl: 1366px;
+
+@mixin respond-to($media) {
+  @if $media == xsmall-screen {
+    @media only screen and (max-width: $s - 1) { @content; }
+  }
+  @else if $media == small-screen {
+    @media only screen and (min-width: $s + 1) and (max-width: $m - 1) { @content; }
+  }
+  @else if $media == medium-screen {
+    @media only screen and (min-width: $m + 1) and (max-width: $l - 1) { @content; }
+  }
+  @else if $media == large-screen {
+    @media only screen and (min-width: $l) { @content; }
+  }
+  @else if $media == xlarge-screen {
+    @media only screen and (min-width: $xl) { @content; }
+  }
+}

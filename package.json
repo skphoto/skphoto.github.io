@@ -1,0 +1,24 @@
+{
+  "name": "ph_landig_page",
+  "version": "1.0.0",
+  "description": "photographer landing page with gallery",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "photographer",
+    "landing",
+    "page",
+    "gallery"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^3.3.6",
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "jquery": "2"
+  }
+}
