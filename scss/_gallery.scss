@@ -31,6 +31,7 @@
 		font-weight: 300;
 		font-size: 50px;
 		text-align: right;
+		color: black;
 		@include respond-to(medium-screen) {
 			margin-top: -150px;
 			font-size: 70px;
@@ -51,7 +52,7 @@
 	height: 535px;
 	overflow: hidden;
 	@include respond-to(xsmall-screen) {
-		height: 455px;
+		height: 320px;
 	}
 	@include respond-to(medium-screen) {
 		height: 405px;
@@ -104,13 +105,20 @@
 	}
 }
 
+
 #showMore {
+	display: block;
 	text-align: center;
 	padding: 5px 10px;
 	margin-top: 20px;
 	margin-bottom: 30px;
 	background-color: rgb(0, 0, 0);
 	color: rgb(200, 200, 200);
+}
+
+#hide {
+	@extend #showMore;
+	display: none;
 }
 
 .gallery {

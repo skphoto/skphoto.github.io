@@ -1,10 +1,11 @@
 .header {
 	position: relative;
-	height: 80vh;
-	z-index: 4;
-	background: url(../images/back1.jpg) white;
+	height: 85vh;
+	z-index: 7;
+	background: white url(../images/back1.png) no-repeat fixed center center;
+	background-size: cover;
 	.banner {
-		z-index: 1;
+		z-index: 10;
 		position: absolute;
 		top: 40%;
 		left: 50%;
@@ -12,7 +13,7 @@
 		font-family: 'Ubuntu', sans-serif;
 		font-size: 14px;
 		font-weight: 700;
-		color: rgba(0, 0, 0, .7);
+		color: rgba(0, 0, 0, .9);
 		letter-spacing: 3px;
 		text-transform: uppercase;
 		
@@ -77,7 +78,7 @@
 	position: fixed;
 	top: 5%;
 	left: 0;
-	z-index: 6;
+	z-index: 10;
 	background-color: black;
 	color: white;
 	transition: 0.5s;
@@ -118,12 +119,13 @@
 	top: 5%;
 	left: 0;
 	transition: 0.3s;
-	z-index: 6;
+	z-index: 10;
 	@include box-shadow(0 0 3px black);
 	h2 {
 		margin: 0;
 		font-size: 16px;
 		padding: 8px 5px 8px 15px;
+		z-index: 10;
 	}
 	a {
 		display: block;
@@ -141,6 +143,7 @@
 	margin-top: 40px;
 	border-top: 1px solid grey;
 	transition: 0.3s;
+	z-index: 10;
 }
 
 
@@ -163,6 +166,7 @@
 		margin: 20px auto;
 		padding: 5px 10px;
 		vertical-align: center;
+		background-color: rgba(255, 255, 255, .6);
 		color: black;
 		border-left: 2px solid black;
 		&:hover {
