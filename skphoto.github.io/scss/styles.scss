@@ -1,0 +1,109 @@
+/* Imports */
+@import 'mixins';
+@import 'header';
+@import 'periscope';
+@import 'services';
+@import 'gallery';
+@import 'viewer';
+@import 'footer';
+
+/* Font */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300,700&subset=latin,cyrillic-ext);
+@import url(https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff);
+@import url(https://fonts.googleapis.com/css?family=Allura);
+
+/* Styles */
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+section {
+	position: relative;
+	z-index: 2;
+	background-color: white;
+}
+
+.scroll {
+	padding: 20px 47%;
+	height: 15vh;
+	text-align: center;
+	z-index: 7;
+	@include box-shadow(0 0 6px rgb(0, 0, 0));
+	img {
+		height: 50px;
+		width: auto;
+		margin: auto;
+	}
+	@include respond-to(xsmall-screen){
+		padding: 10px 40%;
+		height: 15vh;
+		img {
+			height: 50px;
+			width: auto;
+		}
+	}
+	@include respond-to(small-screen){
+		padding: 30px 45%;
+		height: 15vh;
+		img {
+			height: 50px;
+			width: auto;
+		}
+	}
+	@include respond-to(medium-screen){
+		padding: 20px 47%;
+		height: 15vh;
+		img {
+			height: 50px;
+			width: auto;
+		}
+	}
+	@include respond-to(large-screen){
+		padding: 20px 47%;
+		height: 15vh;
+		img {
+			height: 50px;
+			width: auto;
+		}
+	}
+	@include respond-to(xlarge-screen){
+		padding: 20px 40%;
+		height: 20vh;
+		img {
+			height: 50px;
+			width: auto;
+		}
+	}
+}
+
+.divider1 {
+	height: 350px;
+	background: url(../images/preamble.png) no-repeat fixed center center;
+	background-size: cover;
+	z-index: 4;
+	@include respond-to(medium-screen){
+		height: 400px;
+	}
+	@include respond-to(large-screen){
+		height: 450px;
+	}
+	@include respond-to(xlarge-screen){
+		height: 550px;
+	}
+}
+
+.divider2 {
+	@extend .divider1;
+	background-image: url(../images/serv2.png);
+}
+
+.divider3 {
+	@extend .divider1;
+	background-color: white;
+	background-image: url(../images/3.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+}
